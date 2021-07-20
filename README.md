@@ -1,1 +1,1 @@
-Hillel School Advanced Python Course
+Hillel School Introduction Python Course

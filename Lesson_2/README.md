@@ -7,3 +7,9 @@ Lesson 2
 
 Типы данных в Python
 Переменные в Python
+
+
+task_import.py Вывод пасхалок в Python
+task_my_name.py Вывод имени знаками *
+task_dialog.py Ведение простого диалога в консоли
+task_escchartab.py  вывод на печать в консоль таблицы Escape-последовательностей

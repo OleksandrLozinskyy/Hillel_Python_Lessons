@@ -3,7 +3,7 @@ print('''
 "\\b"     -  Backspace
 "\\n"     -  New line
 "\\t"     - Horizontal tab
-"\\"     -  Backslash '\\'
+"\\"      -  Backslash '\\'
 "\\\""     - Double quotation mark "
 "\\'"     - Single quotation mark '
 ''')

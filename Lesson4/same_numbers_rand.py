@@ -11,7 +11,6 @@ string_set = set(lst)
 
 print(len(lst))
 print(len(string_set))
-
 if len(lst) != len(string_set):
     print('Да')
 else:

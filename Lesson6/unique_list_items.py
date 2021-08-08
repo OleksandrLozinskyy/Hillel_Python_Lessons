@@ -19,5 +19,4 @@ print('Исходный список 2 будет иметь введенные 
 gen_range1 = [randrange(range1_lst[0], range1_lst[1]) for i in range(range1_lst[2])]
 gen_range2 = [randrange(range2_lst[0], range2_lst[1]) for i in range(range2_lst[2])]
 
-print(len(list(x for i, x in enumerate(gen_range1 + gen_range2) if i == (gen_range1 + gen_range2).index(x))))
-
+print(len(list(x for x in (gen_range1 + gen_range2) if (gen_range1 + gen_range2).count(x) == 1)))

@@ -25,8 +25,8 @@ gen_range2 = [randrange(range2_lst[0], range2_lst[1]) for i in range(range2_lst[
 # В окончательном варианте может быть удалено или закомментировано по желанию.
 print(gen_range1)
 print(gen_range2)
-print(set(gen_range1).intersection(gen_range2))
+print(set(gen_range1).intersection(set(gen_range2)))
 
 # Подготовительные работы закончены, можем приступать к решению
 
-print(len(set(gen_range1).intersection(gen_range2)))
+print(len(set(gen_range1).intersection(set(gen_range2))))

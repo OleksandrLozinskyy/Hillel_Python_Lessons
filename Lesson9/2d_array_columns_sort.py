@@ -1,10 +1,11 @@
 # Для генерации двухмерного массива и запроса данных от пользователя воспользуемся частью ДЗ из урока 6
+import sys
 from random import randrange
 
 while True:
     column_count = input("Введите размер массива для генерации (column_count должен быть больше 5): ")
     if str(column_count) == 'q':
-        break
+        sys.exit()
     elif not str(column_count).isdigit() or int(column_count) <= 5:
         print('Введенное значение не удовлетворяет требованию. Значение должно быть целым числом больше 5.\n \
         Попробуйте еще раз или нажмите q для выхода.')

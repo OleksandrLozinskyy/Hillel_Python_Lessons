@@ -43,14 +43,14 @@ def print_array(arr, lst):
     """
     for j in range(column_count):
         for i in range(column_count):
-            if len(str(gen_arr[i][j])) == 1 and j == 0:
-                print('   ', gen_arr[i][j], end=' ')
-            elif len(str(gen_arr[i][j])) == 2 and j == 0:
-                print('  ', gen_arr[i][j], end=' ')
-            if len(str(gen_arr[i][j])) == 1 and j > 0:
-                print('   ', gen_arr[i][j], end=' ')
-            elif len(str(gen_arr[i][j])) == 2 and j > 0:
-                print('  ', gen_arr[i][j], end=' ')
+            if len(str(arr[i][j])) == 1 and j == 0:
+                print('   ', arr[i][j], end=' ')
+            elif len(str(arr[i][j])) == 2 and j == 0:
+                print('  ', arr[i][j], end=' ')
+            if len(str(arr[i][j])) == 1 and j > 0:
+                print('   ', arr[i][j], end=' ')
+            elif len(str(arr[i][j])) == 2 and j > 0:
+                print('  ', arr[i][j], end=' ')
         print('\n')
     for n in range(len(lst)):
         if n == 0:

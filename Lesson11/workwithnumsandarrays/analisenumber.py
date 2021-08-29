@@ -5,7 +5,7 @@
 стоящие однозначные числа. Например цифра 1 в числе 201104
 """
 
-__all__ = ["adjacent_digits", "same_numbers_in_row"]
+__all__ = ["adjacent_digits", "same_numbers_in_row", "is_automorth_number"]
 __author__ = 'Oleksandr Lozinskyi (lsash@mail.com)'
 
 
@@ -57,3 +57,26 @@ def same_numbers_in_row(num: int) -> str:
         return ret_value[0]
     else:
         return ret_value[1]
+
+
+def is_automorth_number(num: int):
+
+    """
+    Функция возвращает все автоморфные числа от 1 до числа введенного пользователем.
+    Натуральное число называется автоморфным, если оно равно последним цифрам своего квадрата.
+    Например, 25 ** 2 = 625.
+
+    :param num: Верхняя граница диапазона проверки на наличие автоморфных чисел
+
+    :return: Печатает в консоль все автоморфные числа от 1 до числа введенного пользователем
+    """
+    for n in range(1, (num + 1)):
+        result = n ** 2
+        len_of_n = len(str(n))
+
+        div = 10 ** len_of_n
+
+        res = result % div
+
+        if n == res:
+            print(f'{n} * {n} = {n ** 2}')

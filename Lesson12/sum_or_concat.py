@@ -1,4 +1,4 @@
-def sum_or_concat(a, b):
+def sum_or_concat():
     """
     Функция получает два аргумента и конвертирует их в число. В случае если один
     из аргументов не является числом обрабатываем исключительную ситуацию и
@@ -6,17 +6,17 @@ def sum_or_concat(a, b):
     """
 
     try:
-        num_a = int(a)
-        num_b = int(b)
+        num_a = input('Введите первое значение: ')
+        num_b = input('Введите второе значение: ')
+        num_a = int(num_a)
+        num_b = int(num_b)
     except ValueError as err:
-        ret_str = ' '.join(map(str, (a, b)))
+        ret_str = ' '.join(map(str, (num_a, num_b)))
         print(f'Результирующая строка a + b: {ret_str}')
     else:
         sum_ab = num_a + num_b
         print(f'Сумма введенных чисел {num_a} + {num_b}: {sum_ab}')
 
 
-# Вызов функции с передачей двух числовых аргументов
-sum_or_concat(4, 12)
-# Вызов функции с передачей одного нечислового аргумента
-sum_or_concat(30, ' years of Independence')
+sum_or_concat()
+

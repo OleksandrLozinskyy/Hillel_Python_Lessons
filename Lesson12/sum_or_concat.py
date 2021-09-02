@@ -4,19 +4,18 @@ def sum_or_concat():
     из аргументов не является числом обрабатываем исключительную ситуацию и
     приводим оба аргумента к строке и конкатенируем их.
     """
+    num_a = input('Введите первое значение: ')
+    num_b = input('Введите второе значение: ')
 
     try:
-        num_a = input('Введите первое значение: ')
-        num_b = input('Введите второе значение: ')
-        num_a = int(num_a)
-        num_b = int(num_b)
-    except ValueError as err:
+        num_first = int(num_a)
+        num_second = int(num_b)
+    except ValueError:
         ret_str = ' '.join(map(str, (num_a, num_b)))
         print(f'Результирующая строка a + b: {ret_str}')
     else:
-        sum_ab = num_a + num_b
+        sum_ab = num_first + num_second
         print(f'Сумма введенных чисел {num_a} + {num_b}: {sum_ab}')
 
 
 sum_or_concat()
-

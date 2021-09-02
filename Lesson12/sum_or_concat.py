@@ -15,7 +15,7 @@ def sum_or_concat():
         print(f'Результирующая строка a + b: {ret_str}')
     else:
         sum_ab = num_first + num_second
-        print(f'Сумма введенных чисел {num_a} + {num_b}: {sum_ab}')
+        print(f'Сумма введенных чисел {num_first} + {num_second}: {sum_ab}')
 
 
 sum_or_concat()

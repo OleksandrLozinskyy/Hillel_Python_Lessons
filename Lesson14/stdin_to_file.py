@@ -14,5 +14,3 @@ with open(filename, 'w', encoding='utf-8') as out_file:
         else:
             out_file.close()
             break
-
-

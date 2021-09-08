@@ -23,24 +23,24 @@ class DigitalCounter:
     def increase(self):
         if self.current < self.maximum:
             self.current += 1
-            print(self.current)
+            return self.current
         else:
             # вывод значения счетчика после достижения максимального значения
             # согласно условия задания
             # здесь можно вывести текст о достижении верхней границы либо
             # сбросить счетчик на минимальное значение
-            print(self.current)
+            return self.current
 
 
 # Инициализация класса, вывод стартового значения счетчика, вызов функции
 # инкремента с проверкой достижения верхней границы
 counter = DigitalCounter(2, 7)
 print(counter.current)
-counter.increase()
-counter.increase()
-counter.increase()
-counter.increase()
-counter.increase()
+print(counter.increase())
+print(counter.increase())
+print(counter.increase())
+print(counter.increase())
+print(counter.increase())
 # Верхняя граница достигнута на предыдущем шаге. Следующий шаг выводит
 # максимальное значение без изменения
-counter.increase()
+print(counter.increase())

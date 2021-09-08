@@ -9,13 +9,20 @@ class Student:
         :param age: Возраст
         :param sex: Пол
         """
-        self.grades = []
+        # При инициализации заполняем данные студента
         self.firstname = firstname
         self.lastname = lastname
         self.age = age
         self.sex = sex
+        # Заводим студенту пустую зачетную книжку
+        self.grades = []
 
     def add_grade(self, grade: int):
+        """
+        Добавляет оценку студента в его зачетную книжку
+        :param grade: Оценка студента
+        :return: None
+        """
         self.grades.append(grade)
 
     def average(self) -> float:

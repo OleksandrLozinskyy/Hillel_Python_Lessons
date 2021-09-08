@@ -6,8 +6,8 @@ filename = ''.join(random.choice(string.ascii_uppercase + string.digits
 
 with open(filename, 'w', encoding='utf-8') as out_file:
     while True:
-        user_input = input('Введите текст для записи в файл, для завершения \
-        введите пустую строку: ')
+        user_input = input('Введите текст для записи в файл, для завершения '
+                           'введите пустую строку: ')
         if user_input != '':
             line = user_input + '\n'
             out_file.write(line)

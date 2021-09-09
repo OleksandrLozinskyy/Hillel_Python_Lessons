@@ -7,7 +7,6 @@
 
 
 class DigitalCounter:
-
     current = 0
 
     def __init__(self, min_value, max_value):
@@ -31,14 +30,21 @@ class DigitalCounter:
             # сбросить счетчик на минимальное значение
             return self.current
 
+    def status(self) -> int:
+        """
+        Функция возвращает текущее состояние счетчика на момент вызова
+        :return: текущее состояние счетчика
+        """
+        return self.current
+
 
 # Инициализация класса, вывод стартового значения счетчика, вызов функции
 # инкремента с проверкой достижения верхней границы
 counter = DigitalCounter(2, 7)
-print(counter.current)
 print(counter.increase())
 print(counter.increase())
 print(counter.increase())
+print('Текущее состояние счетчика:', counter.status())
 print(counter.increase())
 print(counter.increase())
 # Верхняя граница достигнута на предыдущем шаге. Следующий шаг выводит

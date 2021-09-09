@@ -22,13 +22,7 @@ class DigitalCounter:
     def increase(self):
         if self.current < self.maximum:
             self.current += 1
-            return self.current
-        else:
-            # вывод значения счетчика после достижения максимального значения
-            # согласно условия задания
-            # здесь можно вывести текст о достижении верхней границы либо
-            # сбросить счетчик на минимальное значение
-            return self.current
+        return self.current
 
     def status(self) -> int:
         """
